@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-20 15:04:56.629880",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "annee_universitaire",
+  "type_licence",
+  "titre_pfe",
+  "etudiants",
+  "nom_encadrants"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "annee_universitaire",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "annee universitaire"
+  },
+  {
+   "columns": 1,
+   "fieldname": "type_licence",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "type licence"
+  },
+  {
+   "columns": 1,
+   "fieldname": "titre_pfe",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "titre pfe"
+  },
+  {
+   "columns": 1,
+   "fieldname": "etudiants",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "etudiants"
+  },
+  {
+   "columns": 1,
+   "fieldname": "nom_encadrants",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "nom encadrants"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-20 15:16:21.968118",
+ "modified_by": "Administrator",
+ "module": "ERPNext Integrations",
+ "name": "Encadrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

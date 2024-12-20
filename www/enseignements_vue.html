@@ -1,0 +1,47 @@
+{% extends "templates/web.html" %}
+
+{% block title %} Enseignant {% endblock %}
+
+{% block page_content %}
+<h1>Enseignants</h1>
+
+{% for enseignant, details in enseignant_data.items() %}
+    <div class="card mb-3">
+        <div>
+            <h2>{{ enseignant }}</h2>
+            <p>Grade : {{ details.grade }}</p>
+            <p>Période d'avancement : {{ details.periode_avancement }}</p>
+            <p>Établissement : {{ details.etablissement }}</p>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Année Universitaire</th>
+                        <th>Filière</th>
+                        <th>Semestre</th>
+                        <th>Enseignement Effectué</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for enseignement in details.enseignements %}
+                        <tr>
+                            <td>{{ enseignement.annee_universitaire }}</td>
+                            <td>{{ enseignement.filiere }}</td>
+                            <td>{{ enseignement.semestre }}</td>
+                            <td>
+                                <ul class="list-unstyled mb-0">
+                                    <li>TD : {{ enseignement.td }}</li>
+                                    <li>TP : {{ enseignement.tp }}</li>
+                                    <li>Cours : {{ enseignement.cours }}</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endfor %}
+
+{% endblock %}

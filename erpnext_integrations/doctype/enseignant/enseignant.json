@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-12-18 22:38:27.420025",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nom",
+  "prenom",
+  "cadre",
+  "grade",
+  "etablissement",
+  "departement",
+  "periode_avancement_consideree",
+  "enseignements_cycle",
+  "encadrement_licence",
+  "is_published",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "label": "Nom"
+  },
+  {
+   "fieldname": "prenom",
+   "fieldtype": "Data",
+   "label": "Prenom"
+  },
+  {
+   "fieldname": "cadre",
+   "fieldtype": "Data",
+   "label": "Cadre"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade"
+  },
+  {
+   "fieldname": "etablissement",
+   "fieldtype": "Data",
+   "label": "Etablissement"
+  },
+  {
+   "fieldname": "departement",
+   "fieldtype": "Data",
+   "label": "Departement "
+  },
+  {
+   "fieldname": "periode_avancement_consideree",
+   "fieldtype": "Data",
+   "label": "Periode avancement consideree "
+  },
+  {
+   "fieldname": "enseignements_cycle",
+   "fieldtype": "Table",
+   "label": "Enseignements cycle",
+   "options": "Enseignements",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "is Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "encadrement_licence",
+   "fieldtype": "Table",
+   "label": "encadrement licence",
+   "options": "Encadrement"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-20 15:09:11.883391",
+ "modified_by": "Administrator",
+ "module": "ERPNext Integrations",
+ "name": "Enseignant",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

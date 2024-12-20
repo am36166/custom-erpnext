@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-18 22:41:06.045787",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "annee_universitaire",
+  "filiere",
+  "semestre",
+  "cours",
+  "td",
+  "tp",
+  "vh"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "annee_universitaire",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Anne"
+  },
+  {
+   "columns": 1,
+   "fieldname": "filiere",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Filie"
+  },
+  {
+   "columns": 1,
+   "fieldname": "semestre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sem"
+  },
+  {
+   "columns": 1,
+   "fieldname": "cours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "cour"
+  },
+  {
+   "columns": 1,
+   "fieldname": "td",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Td"
+  },
+  {
+   "columns": 1,
+   "fieldname": "tp",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Tp"
+  },
+  {
+   "columns": 1,
+   "fieldname": "vh",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": " Vh"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-18 23:12:57.725528",
+ "modified_by": "Administrator",
+ "module": "ERPNext Integrations",
+ "name": "Enseignements",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
